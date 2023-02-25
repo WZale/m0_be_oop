@@ -31,9 +31,9 @@ unicorn1.say("Hello!")
 #  it should have a drink method. When called, the thirsty attribute changes to false
 
 class Vampire
-    def initialize(name)
+    def initialize(name, pet = "bat")
         @name = name
-        @pet = "bat"
+        @pet = pet
         @thirsty = true
     end
 
@@ -60,6 +60,48 @@ p vampire1
 #  it should have a is_hungry attribute that is true by default
 #  it should have a eat method. If the dragon eats 4 times, it is no longer hungry
 
+class Dragon
+    def initialize(name, rider, color)
+        @name = name
+        @rider = rider
+        @color = color
+        @is_hungry = true
+    end
+
+    def change_name(new_name)
+        @name = new_name
+    end
+
+    def change_rider(new_rider)
+        @rider = new_rider
+    end
+
+    def change_color(new_color)
+        @color = new_color
+    end
+
+    $eat_count = 0
+
+    def eat
+        $eat_count += 1
+        if $eat_count >= 3
+            @is_hungry = false
+        end
+    end
+end
+
+dragon1 = Dragon.new("Smaug", "none", "green")
+p dragon1
+dragon1.eat
+p dragon1
+dragon1.eat
+p dragon1
+dragon1.eat
+p dragon1
+dragon1.eat
+p dragon1
+dragon1.eat
+p dragon1
 
 #  Write a Hobbit class
 #  it should have a dynamic name attribute (string)
