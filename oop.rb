@@ -3,6 +3,28 @@
 # it should have a color attribute, that is silver by default
 # it should have a method called "say" that returns whatever string is passed in, with "*~*" at the beginning and end of the string
 
+class Unicorn
+    def initialize(name)
+        @name = name
+        @color = "silver"
+    end
+
+    def change_name(new_name)
+        @name = new_name
+    end
+
+    def say(input)
+       puts"*~*#{input}*~*"
+    end
+end
+
+unicorn1 = Unicorn.new("Fred")
+p unicorn1
+unicorn1.change_name("Robert")
+p unicorn1
+unicorn1.say("Hello!")
+
+
 
 
 #  Write a class called Vampire
