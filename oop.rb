@@ -111,3 +111,281 @@ p dragon1
 #  it should have an is_adult attribute (boolean) that is false by default. once a Hobbit is 33, it should be an adult
 #  it should have an is_old attribute that defaults to false. once a Hobbit is 101, it is old.
 #  it should have a has_ring attribute. If the Hobbit's name is "Frodo", true, if not, false.
+
+class Hobbit
+    def initialize (name, disposition, age = 0)
+        @name = name
+        @disposition = disposition
+        @age = age
+        @is_adult = false
+        @is_old = false
+        @has_ring = false
+            if @name == "Frodo"
+                @has_ring = true
+            end
+    end
+
+    def change_name(new_name, has)
+        @new_name = name
+    end
+
+    def change_disposition(new_disposition)
+        @new_disposition = disposition
+    end
+
+    $age = 0
+
+    def celebrate_birthday
+        $age += 1
+        @age = $age
+        if @age >= 101
+                @is_old = true
+        elsif @age >= 33
+                @is_adult = true
+        end
+    end
+end
+
+
+hobbit1 = Hobbit.new("Frank", "happy")
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+hobbit1.celebrate_birthday
+p hobbit1
+
